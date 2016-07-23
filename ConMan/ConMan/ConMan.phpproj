@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>ConMan</Name>
+    <ProjectGuid>6a159361-dac4-4edf-a4d9-395874896f3c</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>ConMan</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="index.php" />
+    <Compile Include="src\ContentProvider.php" />
+    <Compile Include="src\database\migrations\2016_07_22_123005_create_content_management.php" />
+    <Compile Include="src\Http\Controllers\ContentController.php" />
+    <Compile Include="src\lang\en\seat.php" />
+    <Compile Include="src\Models\ContentSetting.php" />
+    <Compile Include="src\resources\views\contentsettings.blade.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\database\" />
+    <Folder Include="src\database\migrations\" />
+    <Folder Include="src\Http\" />
+    <Folder Include="src\Http\Controllers\" />
+    <Folder Include="src\lang\" />
+    <Folder Include="src\lang\en\" />
+    <Folder Include="src\Models\" />
+    <Folder Include="src\resources\" />
+    <Folder Include="src\resources\views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="composer.json" />
+  </ItemGroup>
+</Project>

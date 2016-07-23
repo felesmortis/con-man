@@ -1,0 +1,21 @@
+{
+    "name": "felesmortis/con-man",
+    "description": "This plugin does fuck all",
+    "type": "seat-plugin",
+    "autoload":{
+        "psr-4":{
+            "Seat\\ConMan\\": "src/"
+        }
+    },
+  "require": {
+
+  },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "H0ANG",
+            "email": "felesmortis@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
