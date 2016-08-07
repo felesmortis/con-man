@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -17,6 +18,7 @@
   <ItemGroup>
     <Compile Include="src\database\migrations\2016_07_22_123005_create_content_management.php" />
     <Compile Include="src\Http\Controllers\ContentController.php" />
+    <Compile Include="src\Http\routes.php" />
     <Compile Include="src\lang\en\seat.php" />
     <Compile Include="src\Models\ContentSetting.php" />
     <Compile Include="src\resources\views\contentsettings.blade.php" />
