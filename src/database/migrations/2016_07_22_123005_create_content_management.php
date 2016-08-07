@@ -21,7 +21,7 @@ class CreateContentManagement extends Migration
         });
         Schema::create('content_page_roles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('content_id')->unsigned();
+            $table->bigInteger('content_id')->unsigned();
             $table->integer('role_id')->unsigned();
             $table->timestamps();
 
