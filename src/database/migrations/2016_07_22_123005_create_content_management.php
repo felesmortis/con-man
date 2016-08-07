@@ -14,15 +14,13 @@ class CreateContentManagement extends Migration
     public function up()
     {
         Schema::create('content_pages', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('content');
             $table->string('createdby');
             $table->timestamps();
-
-            $table->primary('id');
         });
         Schema::create('content_page_roles', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('content_id');
             $table->string('role_id');
             $table->timestamps();
@@ -36,8 +34,6 @@ class CreateContentManagement extends Migration
                 ->references('id')
                 ->on('roles')
                 ->onDelete('cascade');
-
-            $table->primary('id');
         });
     }
 
