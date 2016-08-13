@@ -44,8 +44,8 @@ class CreateContentManagement extends Migration
      */
     public function down()
     {
-        Schema::drop('content_pages');
         Schema::drop('content_page_roles');
+        Schema::drop('content_pages');
     }
 }
 ?>
