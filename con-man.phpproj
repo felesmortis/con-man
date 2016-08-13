@@ -20,8 +20,12 @@
     <Compile Include="src\Http\Controllers\ContentController.php" />
     <Compile Include="src\Http\routes.php" />
     <Compile Include="src\lang\en\seat.php" />
-    <Compile Include="src\Models\ContentSetting.php" />
-    <Compile Include="src\resources\views\contentsettings.blade.php" />
+    <Compile Include="src\Models\ContentPageRoles.php" />
+    <Compile Include="src\Models\ContentPages.php" />
+    <Compile Include="src\resources\views\home.blade.php" />
+    <Compile Include="src\resources\views\settings.blade.php" />
+    <Compile Include="src\resources\views\display.blade.php" />
+    <Compile Include="src\resources\views\creation.blade.php" />
     <Compile Include="src\ContentProvider.php" />
     <Compile Include=".gitattributes" />
     <Compile Include=".gitignore" />

@@ -15,7 +15,7 @@ class CreateContentManagement extends Migration
     {
         Schema::create('content_pages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('content');
+            $table->longText('content');
             $table->string('createdby');
             $table->timestamps();
         });

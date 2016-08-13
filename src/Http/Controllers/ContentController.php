@@ -16,15 +16,25 @@ use App\Http\Controllers\Controller;
 	*/
 class ContentController extends Controller
 {
-    public function getControls()
+    public function getHome()
     {
         //return view('controls');
-        return 'Hello World';
+        return view('conman::home');
     }
 
     public function getSettings()
     {
-        return view('conman::contentsettings');
+        return view('conman::settings');
+    }
+
+    public function getCreation()
+    {
+        return view('conman::creation');
+    }
+
+    public function getContent()
+    {
+        return view('conman::display');
     }
 
 }
