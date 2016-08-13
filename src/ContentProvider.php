@@ -38,12 +38,12 @@ class ContentProvider extends ServiceProvider
 
     public function addViews()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'teamspeak');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'conman');
     }
 
     public function addTranslations()
     {
-        $this->loadTranslationsFrom(__DIR__ . '/lang', 'teamspeak');
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'conman');
     }
 
     public function addPublications()
