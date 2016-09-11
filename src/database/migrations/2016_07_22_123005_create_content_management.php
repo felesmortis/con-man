@@ -48,7 +48,7 @@ class CreateContentManagement extends Migration
                 ->on('content_pages')
                 ->onDelete('cascade');
 
-            $table->foreign('alliance_id')
+            $table->foreign('content_alliance_id')
                 ->references('allianceID')
                 ->on('eve_alliance_lists')
                 ->onDelete('cascade');
@@ -63,7 +63,7 @@ class CreateContentManagement extends Migration
                 ->on('content_pages')
                 ->onDelete('cascade');
 
-            $table->foreign('corporation_id')
+            $table->foreign('content_corp_id')
                 ->references('corporationID')
                 ->on('corporation_sheets')
                 ->onDelete('cascade');
