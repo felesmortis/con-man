@@ -28,7 +28,7 @@ class CreateContentManagement extends Migration
             $table->timestamps();
 
             $table->foreign('content_id')
-                ->references('id')
+                ->references('content_id')
                 ->on('content_pages')
                 ->onDelete('cascade');
 
@@ -44,7 +44,7 @@ class CreateContentManagement extends Migration
             $table->timestamps();
 
             $table->foreign('content_id')
-                ->references('id')
+                ->references('content_id')
                 ->on('content_pages')
                 ->onDelete('cascade');
 
@@ -59,7 +59,7 @@ class CreateContentManagement extends Migration
             $table->timestamps();
 
             $table->foreign('content_id')
-                ->references('id')
+                ->references('content_id')
                 ->on('content_pages')
                 ->onDelete('cascade');
 
