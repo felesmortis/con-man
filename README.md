@@ -1,2 +1,2 @@
 # con-man
-Composer PHP bullshit
+Composer/PHP
